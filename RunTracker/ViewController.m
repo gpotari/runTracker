@@ -21,6 +21,7 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+    NSString* h = @"hell";
     // Dispose of any resources that can be recreated.
 }
 
