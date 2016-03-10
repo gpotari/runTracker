@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-RunTracker.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>geos.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>proj4.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>spatialite.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>sqlite3.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>0174BB2D37EDE555FA3EF313BCA45B3F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1E3FF69426E85CD0F78070AF6BE64A6E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2BF7476B75A2C092B16F4AA5D0DB35FA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6CCBF9803D014178D8BAB29A3565446F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E6A8D58EC2972E6E502C213A250A4647</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
