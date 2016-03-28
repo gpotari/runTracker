@@ -10,6 +10,8 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)forwardButtonClicked:(id)sender;
+
 
 @end
 

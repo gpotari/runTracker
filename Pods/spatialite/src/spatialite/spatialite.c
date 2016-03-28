@@ -84,7 +84,7 @@ Regione Toscana - Settore Sistema Informativo Territoriale ed Ambientale
 #include <spatialite/gaiageo.h>
 #include <spatialite/gaiaexif.h>
 #include <spatialite/geopackage.h>
-#include <spatialite/spatialite.h>
+#include <spatialite/spatialite/spatialite.h>
 #include <spatialite/gg_dxf.h>
 #include <spatialite.h>
 #include <spatialite_private.h>

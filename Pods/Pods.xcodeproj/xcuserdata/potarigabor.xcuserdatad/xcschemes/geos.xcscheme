@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'B720FF9DDEA783F2E3737715'
+               BlueprintIdentifier = '315B290E2C0FE805E50FCE5A'
                BlueprintName = 'geos'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libgeos.a'>

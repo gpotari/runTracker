@@ -1,7 +1,7 @@
 CLANG_CXX_LIBRARY = libstdc++
 CLANG_ENABLE_MODULES = NO
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = ${PODS_ROOT}/geos/include ${PODS_ROOT}/geos/capi ${PODS_ROOT}/spatialite/src ${PODS_ROOT}/spatialite/src/headers ${PODS_ROOT}/geos/include ${PODS_ROOT}/geos/capi $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/geos" "${PODS_ROOT}/Headers/Public/proj4" "${PODS_ROOT}/Headers/Public/spatialite" "${PODS_ROOT}/Headers/Public/sqlite3"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/geos" -isystem "${PODS_ROOT}/Headers/Public/proj4" -isystem "${PODS_ROOT}/Headers/Public/spatialite" -isystem "${PODS_ROOT}/Headers/Public/sqlite3"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"geos" -l"iconv" -l"proj4" -l"spatialite" -l"sqlite3" -l"z"
+HEADER_SEARCH_PATHS = ${PODS_ROOT}/geos/include ${PODS_ROOT}/geos/capi ${PODS_ROOT}/spatialite/src ${PODS_ROOT}/spatialite/src/headers ${PODS_ROOT}/geos/include ${PODS_ROOT}/geos/capi $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/SWRevealViewController" "${PODS_ROOT}/Headers/Public/geos" "${PODS_ROOT}/Headers/Public/proj4" "${PODS_ROOT}/Headers/Public/spatialite" "${PODS_ROOT}/Headers/Public/sqlite3"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/SWRevealViewController" -isystem "${PODS_ROOT}/Headers/Public/geos" -isystem "${PODS_ROOT}/Headers/Public/proj4" -isystem "${PODS_ROOT}/Headers/Public/spatialite" -isystem "${PODS_ROOT}/Headers/Public/sqlite3"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"SWRevealViewController" -l"geos" -l"iconv" -l"proj4" -l"spatialite" -l"sqlite3" -l"z" -framework "CoreGraphics"
 PODS_ROOT = ${SRCROOT}/Pods

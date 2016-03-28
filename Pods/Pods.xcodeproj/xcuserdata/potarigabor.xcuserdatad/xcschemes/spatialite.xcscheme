@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '5BD253C2C640DAB229650819'
+               BlueprintIdentifier = '4E32517EC0F9A4EEF951CA24'
                BlueprintName = 'spatialite'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libspatialite.a'>

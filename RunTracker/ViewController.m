@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SWRevealViewController.h"
 
 @interface ViewController ()
 
@@ -17,12 +18,30 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [NSTimer scheduledTimerWithTimeInterval:3 target:self selector:@selector(goForward) userInfo:nil repeats:NO];
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    NSString* h = @"hell";
+
     // Dispose of any resources that can be recreated.
 }
 
+-(void)goForward {
+    UIStoryboard *mainStoryBoard = self.storyboard;
+    UIViewController* vc = [mainStoryBoard instantiateViewControllerWithIdentifier:@"SWRevealViewController"];
+    
+    [self presentViewController:vc animated:YES completion:nil];
+}
+
+
+- (IBAction)forwardButtonClicked:(id)sender {
+    UIStoryboard *mainStoryBoard = self.storyboard;
+    UIViewController* vc = [mainStoryBoard instantiateViewControllerWithIdentifier:@"SWRevealViewController"];
+    
+    [self presentViewController:vc animated:YES completion:nil];
+    
+}
 @end

@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SWRevealViewController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>geos.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,7 +37,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0174BB2D37EDE555FA3EF313BCA45B3F</key>
+		<key>0729EC30CB7A7D1BB1721088858CB980</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -42,17 +47,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2BF7476B75A2C092B16F4AA5D0DB35FA</key>
+		<key>23D3AF5E8360CE7A807D5CBFF2731918</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6CCBF9803D014178D8BAB29A3565446F</key>
+		<key>5A5CBFD0B27FA14F2432CB210760311B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E6A8D58EC2972E6E502C213A250A4647</key>
+		<key>5A9B689CB05F04A728AE792FAA8636B2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>65390F81659CD5FF1593BD8139DBA012</key>
 		<dict>
 			<key>primary</key>
 			<true/>

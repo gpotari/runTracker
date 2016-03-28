@@ -5,6 +5,7 @@
 
 target 'RunTracker' do
 	pod 'spatialite', '~> 4.1'
+    pod 'SWRevealViewController', '~> 2.3'
 end
 
 target 'RunTrackerTests' do
