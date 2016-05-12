@@ -7,6 +7,8 @@
 //
 
 #import "SaveTrackViewController.h"
+#import "SWRevealViewController.h"
+#import "DatabaseConnector.h"
 
 @interface SaveTrackViewController ()
 
@@ -16,12 +18,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self customSetup];
     // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)customSetup{
+    SWRevealViewController *revealViewController = self.revealViewController;
+    if ( revealViewController )
+    {
+        
+        [_menuButton  addTarget:revealViewController
+                         action:@selector(revealToggle:)
+               forControlEvents:UIControlEventTouchUpInside];
+        [self.view addGestureRecognizer: self.revealViewController.panGestureRecognizer];
+        
+    }
 }
 
 /*
@@ -34,4 +50,44 @@
 }
 */
 
+- (IBAction)backButtonClicked:(id)sender {
+    
+    UIStoryboard *mainStoryBoard = self.storyboard ;
+    UIViewController* vc = [mainStoryBoard instantiateViewControllerWithIdentifier:@"MapViewController"];
+    
+    [self.revealViewController setFrontViewController:vc animated:YES];
+}
+
+- (IBAction)saveButtonClicked:(id)sender {
+    
+    
+    DatabaseConnector* databaseConnector = [DatabaseConnector databaseConnector];
+    [databaseConnector saveTrack:_nameTextField.text comment:_commentTextView.text description:_descriptionTextField.text ];
+
+    
+    UIAlertController * alert=   [UIAlertController
+                                  alertControllerWithTitle:@"Felmérés mentése"
+                                  message:@"Sikeres mentés"
+                                  preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction* yesButton = [UIAlertAction
+                                actionWithTitle:@"OK"
+                                style:UIAlertActionStyleDefault
+                                handler:^(UIAlertAction * action)
+                                {
+                                    
+                                    UIStoryboard *mainStoryBoard = self.storyboard ;
+                                    UIViewController* vc = [mainStoryBoard instantiateViewControllerWithIdentifier:@"MapViewController"];
+                                    
+                                    [self.revealViewController setFrontViewController:vc animated:YES];
+
+                                    
+                                    
+                                }];
+
+    
+    [alert addAction:yesButton];
+    
+    [self presentViewController:alert animated:YES completion:nil];
+ }
 @end

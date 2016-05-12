@@ -26,9 +26,9 @@
     if ( revealViewController )
     {
         
-        //[_menuButton  addTarget:revealViewController
-        //                 action:@selector(revealToggle:)
-        //       forControlEvents:UIControlEventTouchUpInside];
+        [_menuButton  addTarget:revealViewController
+                         action:@selector(revealToggle:)
+               forControlEvents:UIControlEventTouchUpInside];
         [self.view addGestureRecognizer: self.revealViewController.panGestureRecognizer];
         
     }
@@ -41,15 +41,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 - (IBAction)mapClicked:(id)sender {
     
@@ -59,5 +50,23 @@
     [self.revealViewController setFrontViewController:vc animated:YES];
     
     
+}
+
+- (IBAction)statisticButtonClicked:(id)sender {
+    
+    
+    UIStoryboard *mainStoryBoard = self.storyboard ;
+    UIViewController* vc = [mainStoryBoard instantiateViewControllerWithIdentifier:@"StatisticViewController"];
+    
+    [self.revealViewController setFrontViewController:vc animated:YES];
+
+}
+
+- (IBAction)settingButtonClicked:(id)sender {
+    
+    UIStoryboard *mainStoryBoard = self.storyboard ;
+    UIViewController* vc = [mainStoryBoard instantiateViewControllerWithIdentifier:@"SettingsViewController"];
+    
+    [self.revealViewController setFrontViewController:vc animated:YES];
 }
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "MenuViewController.h"
+#import "SWRevealViewController.h"
 
 @interface MenuViewController ()
 
@@ -26,4 +27,36 @@
 
 
 
+- (IBAction)settingsButtonClicked:(id)sender {
+    
+    UIStoryboard *mainStoryBoard = self.storyboard ;
+    UIViewController* vc = [mainStoryBoard instantiateViewControllerWithIdentifier:@"SettingsViewController"];
+    
+    [self.revealViewController setFrontViewController:vc animated:YES];
+    
+    [self.revealViewController setFrontViewPosition: FrontViewPositionLeft animated: YES];
+}
+
+- (IBAction)statisticButtonClicked:(id)sender {
+    
+    
+    UIStoryboard *mainStoryBoard = self.storyboard ;
+    UIViewController* vc = [mainStoryBoard instantiateViewControllerWithIdentifier:@"StatisticViewController"];
+    
+    [self.revealViewController setFrontViewController:vc animated:YES];
+    
+    
+}
+
+- (IBAction)MapButtonClicked:(id)sender {
+    
+    
+    UIStoryboard *mainStoryBoard = self.storyboard ;
+    UIViewController* vc = [mainStoryBoard instantiateViewControllerWithIdentifier:@"MapViewController"];
+    
+    [self.revealViewController setFrontViewController:vc animated:YES];
+    
+    [self.revealViewController setFrontViewPosition: FrontViewPositionLeft animated: YES];
+    
+}
 @end

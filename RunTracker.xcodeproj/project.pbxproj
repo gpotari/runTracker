@@ -8,10 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		7745F076C2F579DB4565E45D /* libPods-RunTracker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02A29481AE046BAE9E961015 /* libPods-RunTracker.a */; };
+		860338081CB30460003E69FD /* StatisticViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 860338071CB30460003E69FD /* StatisticViewController.m */; };
+		8603380B1CB309AC003E69FD /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8603380A1CB309AC003E69FD /* SettingsViewController.m */; };
 		861866CA1C91F12400299863 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 861866C91C91F12400299863 /* Podfile */; };
 		861866CE1C921D4C00299863 /* MainWindowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 861866CD1C921D4C00299863 /* MainWindowViewController.m */; };
 		861866D11C921D8400299863 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 861866D01C921D8400299863 /* MenuViewController.m */; };
 		861866D31C92342400299863 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 861866D21C92342400299863 /* Launch Screen.storyboard */; };
+		8637F48D1CD68C1700504FC4 /* DatabaseConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 8637F48C1CD68C1700504FC4 /* DatabaseConnector.m */; };
+		8637F4901CD68CCF00504FC4 /* Tour.m in Sources */ = {isa = PBXBuildFile; fileRef = 8637F48F1CD68CCF00504FC4 /* Tour.m */; };
+		8637F4931CD6A9A700504FC4 /* DataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 8637F4921CD6A9A700504FC4 /* DataProvider.m */; };
+		8637F4951CD6ADD700504FC4 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8637F4941CD6ADD700504FC4 /* libstdc++.6.0.9.tbd */; };
+		8637F4971CD6ADDE00504FC4 /* libstdc++.6.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8637F4961CD6ADDE00504FC4 /* libstdc++.6.tbd */; };
+		8637F4991CD6AE1400504FC4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8637F4981CD6AE1400504FC4 /* CoreLocation.framework */; };
+		8637F49B1CD6AE6A00504FC4 /* RT.db in Resources */ = {isa = PBXBuildFile; fileRef = 8637F49A1CD6AE6A00504FC4 /* RT.db */; };
 		864304A41CA97F4400AE92C3 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 864304A31CA97F4400AE92C3 /* MapViewController.m */; };
 		864304A71CA9879F00AE92C3 /* SaveTrackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 864304A61CA9879F00AE92C3 /* SaveTrackViewController.m */; };
 		86B32CBD1C8A1F5300C46124 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B32CBC1C8A1F5300C46124 /* main.m */; };
@@ -21,6 +30,7 @@
 		86B32CE11C8A1F5300C46124 /* RunTrackerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B32CE01C8A1F5300C46124 /* RunTrackerUITests.m */; };
 		86C17A191CA9156D0039A428 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86C17A181CA9156D0039A428 /* Main.storyboard */; };
 		86CB085A1CA89B2B006AC0E6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86CB08591CA89B2B006AC0E6 /* MapKit.framework */; };
+		86E4FB6E1CE26C370064E0A9 /* RunTrackerUnitTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E4FB6D1CE26C370064E0A9 /* RunTrackerUnitTest.m */; };
 		86FB2E641CA9CAE300371833 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86FB2E631CA9CAE300371833 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -44,12 +54,26 @@
 /* Begin PBXFileReference section */
 		02A29481AE046BAE9E961015 /* libPods-RunTracker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RunTracker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49C98E2C48F8585FDE3547D7 /* Pods-RunTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunTracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RunTracker/Pods-RunTracker.debug.xcconfig"; sourceTree = "<group>"; };
+		860338061CB30460003E69FD /* StatisticViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatisticViewController.h; sourceTree = "<group>"; };
+		860338071CB30460003E69FD /* StatisticViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatisticViewController.m; sourceTree = "<group>"; };
+		860338091CB309AC003E69FD /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		8603380A1CB309AC003E69FD /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		861866C91C91F12400299863 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		861866CC1C921D4C00299863 /* MainWindowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindowViewController.h; sourceTree = "<group>"; };
 		861866CD1C921D4C00299863 /* MainWindowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindowViewController.m; sourceTree = "<group>"; };
 		861866CF1C921D8400299863 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		861866D01C921D8400299863 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		861866D21C92342400299863 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		8637F48B1CD68C1700504FC4 /* DatabaseConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseConnector.h; sourceTree = "<group>"; };
+		8637F48C1CD68C1700504FC4 /* DatabaseConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseConnector.m; sourceTree = "<group>"; };
+		8637F48E1CD68CCF00504FC4 /* Tour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tour.h; sourceTree = "<group>"; };
+		8637F48F1CD68CCF00504FC4 /* Tour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tour.m; sourceTree = "<group>"; };
+		8637F4911CD6A9A700504FC4 /* DataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataProvider.h; sourceTree = "<group>"; };
+		8637F4921CD6A9A700504FC4 /* DataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataProvider.m; sourceTree = "<group>"; };
+		8637F4941CD6ADD700504FC4 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		8637F4961CD6ADDE00504FC4 /* libstdc++.6.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.tbd"; path = "usr/lib/libstdc++.6.tbd"; sourceTree = SDKROOT; };
+		8637F4981CD6AE1400504FC4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		8637F49A1CD6AE6A00504FC4 /* RT.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = RT.db; sourceTree = "<group>"; };
 		864304A21CA97F4400AE92C3 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		864304A31CA97F4400AE92C3 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		864304A51CA9879F00AE92C3 /* SaveTrackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveTrackViewController.h; sourceTree = "<group>"; };
@@ -69,6 +93,7 @@
 		86B32CE21C8A1F5300C46124 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86C17A181CA9156D0039A428 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		86CB08591CA89B2B006AC0E6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		86E4FB6D1CE26C370064E0A9 /* RunTrackerUnitTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunTrackerUnitTest.m; sourceTree = "<group>"; };
 		86FB2E631CA9CAE300371833 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBA071742B4272295662C1E3 /* Pods-RunTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-RunTracker/Pods-RunTracker.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,6 +103,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8637F4991CD6AE1400504FC4 /* CoreLocation.framework in Frameworks */,
+				8637F4971CD6ADDE00504FC4 /* libstdc++.6.tbd in Frameworks */,
+				8637F4951CD6ADD700504FC4 /* libstdc++.6.0.9.tbd in Frameworks */,
 				86CB085A1CA89B2B006AC0E6 /* MapKit.framework in Frameworks */,
 				7745F076C2F579DB4565E45D /* libPods-RunTracker.a in Frameworks */,
 			);
@@ -103,6 +131,9 @@
 		80FBE40E89B2841DCBD0AC14 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8637F4981CD6AE1400504FC4 /* CoreLocation.framework */,
+				8637F4961CD6ADDE00504FC4 /* libstdc++.6.tbd */,
+				8637F4941CD6ADD700504FC4 /* libstdc++.6.0.9.tbd */,
 				86CB08591CA89B2B006AC0E6 /* MapKit.framework */,
 				02A29481AE046BAE9E961015 /* libPods-RunTracker.a */,
 			);
@@ -112,6 +143,13 @@
 		861866CB1C921A5C00299863 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				8637F49A1CD6AE6A00504FC4 /* RT.db */,
+				8637F4911CD6A9A700504FC4 /* DataProvider.h */,
+				8637F4921CD6A9A700504FC4 /* DataProvider.m */,
+				8637F48E1CD68CCF00504FC4 /* Tour.h */,
+				8637F48F1CD68CCF00504FC4 /* Tour.m */,
+				8637F48B1CD68C1700504FC4 /* DatabaseConnector.h */,
+				8637F48C1CD68C1700504FC4 /* DatabaseConnector.m */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -140,6 +178,10 @@
 				864304A31CA97F4400AE92C3 /* MapViewController.m */,
 				864304A51CA9879F00AE92C3 /* SaveTrackViewController.h */,
 				864304A61CA9879F00AE92C3 /* SaveTrackViewController.m */,
+				860338061CB30460003E69FD /* StatisticViewController.h */,
+				860338071CB30460003E69FD /* StatisticViewController.m */,
+				860338091CB309AC003E69FD /* SettingsViewController.h */,
+				8603380A1CB309AC003E69FD /* SettingsViewController.m */,
 			);
 			name = viewmodel;
 			sourceTree = "<group>";
@@ -193,6 +235,7 @@
 			children = (
 				86B32CD51C8A1F5300C46124 /* RunTrackerTests.m */,
 				86B32CD71C8A1F5300C46124 /* Info.plist */,
+				86E4FB6D1CE26C370064E0A9 /* RunTrackerUnitTest.m */,
 			);
 			path = RunTrackerTests;
 			sourceTree = "<group>";
@@ -285,6 +328,7 @@
 				TargetAttributes = {
 					86B32CB71C8A1F5300C46124 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = DH2WB68EK8;
 					};
 					86B32CD01C8A1F5300C46124 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -324,6 +368,7 @@
 				861866CA1C91F12400299863 /* Podfile in Resources */,
 				861866D31C92342400299863 /* Launch Screen.storyboard in Resources */,
 				86FB2E641CA9CAE300371833 /* Assets.xcassets in Resources */,
+				8637F49B1CD6AE6A00504FC4 /* RT.db in Resources */,
 				86C17A191CA9156D0039A428 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,10 +442,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8637F48D1CD68C1700504FC4 /* DatabaseConnector.m in Sources */,
 				86B32CC31C8A1F5300C46124 /* ViewController.m in Sources */,
+				8637F4931CD6A9A700504FC4 /* DataProvider.m in Sources */,
 				861866CE1C921D4C00299863 /* MainWindowViewController.m in Sources */,
 				86B32CC01C8A1F5300C46124 /* AppDelegate.m in Sources */,
+				8603380B1CB309AC003E69FD /* SettingsViewController.m in Sources */,
+				860338081CB30460003E69FD /* StatisticViewController.m in Sources */,
 				864304A71CA9879F00AE92C3 /* SaveTrackViewController.m in Sources */,
+				8637F4901CD68CCF00504FC4 /* Tour.m in Sources */,
 				864304A41CA97F4400AE92C3 /* MapViewController.m in Sources */,
 				86B32CBD1C8A1F5300C46124 /* main.m in Sources */,
 				861866D11C921D8400299863 /* MenuViewController.m in Sources */,
@@ -411,6 +461,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86E4FB6E1CE26C370064E0A9 /* RunTrackerUnitTest.m in Sources */,
 				86B32CD61C8A1F5300C46124 /* RunTrackerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -526,10 +577,14 @@
 			baseConfigurationReference = 49C98E2C48F8585FDE3547D7 /* Pods-RunTracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = RunTracker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = elte.RunTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -538,10 +593,14 @@
 			baseConfigurationReference = FBA071742B4272295662C1E3 /* Pods-RunTracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = RunTracker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = elte.RunTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface SaveTrackViewController : UIViewController
+- (IBAction)backButtonClicked:(id)sender;
+- (IBAction)saveButtonClicked:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *menuButton;
+@property (weak, nonatomic) IBOutlet UITextField *descriptionTextField;
+@property (weak, nonatomic) IBOutlet UITextView *commentTextView;
+@property (weak, nonatomic) IBOutlet UITextField *nameTextField;
 
 @end

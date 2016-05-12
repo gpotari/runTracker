@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "SWRevealViewController.h"
+#import "DatabaseConnector.h"
 
 @interface ViewController ()
 
@@ -18,8 +19,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
     [NSTimer scheduledTimerWithTimeInterval:3 target:self selector:@selector(goForward) userInfo:nil repeats:NO];
+    
+    DatabaseConnector *db = [DatabaseConnector databaseConnector];
+    [db connectToDatabase];
     
 }
 

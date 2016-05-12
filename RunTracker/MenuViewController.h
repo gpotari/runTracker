@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface MenuViewController : UIViewController
+- (IBAction)settingsButtonClicked:(id)sender;
+- (IBAction)statisticButtonClicked:(id)sender;
 
+- (IBAction)MapButtonClicked:(id)sender;
 @end

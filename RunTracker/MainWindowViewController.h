@@ -10,5 +10,8 @@
 
 @interface MainWindowViewController : UIViewController
 - (IBAction)mapClicked:(id)sender;
+- (IBAction)statisticButtonClicked:(id)sender;
+- (IBAction)settingButtonClicked:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *menuButton;
 
 @end

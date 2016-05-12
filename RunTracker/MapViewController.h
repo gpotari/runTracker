@@ -9,7 +9,10 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 
-@interface MapViewController : UIViewController
+@interface MapViewController : UIViewController<MKMapViewDelegate> {
+    bool tracking;
+    MKPolyline* trackLayer;
+}
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (weak, nonatomic) IBOutlet UIButton *menuButton;
@@ -17,5 +20,8 @@
 
 - (IBAction)startTrackButtonClicked:(id)sender;
 
+@property(nonatomic, retain) CLLocationManager *locationManager;
+@property (weak, nonatomic) IBOutlet UIButton *trackButton;
+@property ( weak, nonatomic) UIColor* trackColor;
 
 @end
